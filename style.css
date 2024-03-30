@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 375px;
+    height: 768px;
+    padding: 40px 24px 85px;
+    object-fit: contain;
+    background-image: linear-gradient(to bottom, #b068e9, #6463e7 147%);
+}
+
+.illustration-mobile {
+    position: absolute;
+    z-index: 1;
+    width: 237px;
+    height: 180px;
+    margin: 0 45px;  
+}
+
+.wrapper {
+    width: 327px;
+    height: 535px;
+    margin-top: 108px;
+    padding: 132px 24px 48px;
+    border-radius: 23px;
+    box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.5);
+    background-color: #fff;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+h1 {
+    width: 67px;
+    height: 32px;
+    margin: 0 106px 40px;
+    font-family: Kumbh Sans;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e1f36;
+}
+
+.wrapper h3 {
+    height: 13px;
+    margin: 0 0 0 1px;
+    font-family: Kumbh Sans;
+    font-size: 13px;
+    text-align: left;
+    color: #4b4c5f;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    width: 9px;
+    height: 6px;
+}
+
+.arrow-2{
+    rotate: 180deg;
+}
+
+.line {
+    width: 279px;
+    height: 1px;
+    margin: 18px 0 19px;
+    background-color: #e8e8ea;
+}
+
+.wrapper h4 {
+    height: 13px;
+    margin: 0 0 13px 1px;
+    font-family: Kumbh Sans;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    color: #1e1f36;    
+}
+
+.mobile {
+    width: 279px;
+    height: 36px;
+    margin: 0 0 0 1px;
+    font-family: Kumbh Sans;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    color: #787887;   
+}
+
+.illustration-desktop, .illustration-box, .desktop {
+    display: none;
+}
+
+@media screen and (min-width:1440px)  {
+
+    .container {
+        position: relative;
+        display: flex;
+        width: 1440px;
+        height: 830px;
+        padding: 129px 239px 130px 238.9px;
+        background-image: linear-gradient(to bottom, #b068e9, #6463e7);
+    }
+    
+    .illustration-mobile, .mobile {
+       display: none;
+    }
+    
+    .illustration-desktop {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        width: 388px;
+        height: 359px;
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+
+    .illustration-box {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 200px;
+        height: 240px;
+        margin-top: 180px;
+        margin-left: -50px;
+        object-fit: contain;
+    }
+    
+    .wrapper {
+        position: relative;
+        width: 920px;
+        height: 509px;
+        margin: 0 0 0 42.1px;
+        padding: 65px 95px 83px 475px;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top -300px left -600px;
+    }
+    
+    .wrapper h3 {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .wrapper h3:hover {
+        color: #f47b56;
+    }
+    
+    .line {
+        width: 350px;
+    }
+    
+    .wrapper h4 {
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .desktop  {
+        display: block;
+        width: 319px;
+        height: 36px;
+        margin: 0 0 0 1px;
+        font-family: Kumbh Sans;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+        color: #787887;   
+        cursor: pointer;
+    }
+}
